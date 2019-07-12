@@ -2,9 +2,15 @@ package yahtzee;
 
 import java.util.ArrayList;
 
+/**
+ * Class that represents a dice throw. It holds the value of the dice in an int array.
+ * @author Luca Laarhoven
+ *
+ */
 public class Throw {
 	private int[] diceThrow;
 	
+	/* The following 4 constructors are all valid ways to instantiate a Throw object */
 	public Throw() {
 		this.diceThrow = new int[5];
 	}
@@ -24,6 +30,9 @@ public class Throw {
 		}
 	}
 	
+	/*
+	 * Method to print this dice throw
+	 */
 	public void printDiceThrow() {
 		System.out.print("[" + this.diceThrow[0]);
 		for (int i = 1; i < this.diceThrow.length; i++) {
