@@ -16,4 +16,10 @@ public class Player {
 	public ArrayList<Throw> getThrowHistory() {
 		return this.throwHistory;
 	}
+	
+	public void printThrowHistory() {
+		for (Throw diceThrow: this.throwHistory) {
+			diceThrow.printDiceThrow();
+		}
+	}
 }

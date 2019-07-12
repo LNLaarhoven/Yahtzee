@@ -21,7 +21,11 @@ public class Throw {
 	}
 	
 	public void printDiceThrow() {
-		System.out.println(diceThrow);
+		System.out.print("[" + this.diceThrow[0]);
+		for (int i = 1; i < 5; i++) {
+			System.out.print(", " + this.diceThrow[i]);
+		}
+		System.out.println("]");
 	}
 	
 	public void setDiceThrow(int[] diceThrow) {
